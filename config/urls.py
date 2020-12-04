@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blog import views as list_views
+from list import views as list_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('')
+    path('TODOlist/', list_views.top),
 ]
