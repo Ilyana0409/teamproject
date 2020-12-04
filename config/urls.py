@@ -22,4 +22,9 @@ from TODOlist import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('TODOlist/', include('TODOlist.urls'))
+from list import views as list_views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('TODOlist/', list_views.top),
 ]
